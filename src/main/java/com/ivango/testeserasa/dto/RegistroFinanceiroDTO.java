@@ -4,6 +4,8 @@ import lombok.Data;
 
 @Data
 public class RegistroFinanceiroDTO {
+	
+	private int idEmpresa;
 
 	private int qtdNotas;
 	

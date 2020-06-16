@@ -1,9 +1,9 @@
 package com.ivango.testeserasa.entity;
 
+import java.time.LocalDateTime;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.EnumType;
-import javax.persistence.Enumerated;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -25,8 +25,13 @@ public class RegistroFinanceiroEntity {
 	@ManyToOne
     @JoinColumn(name = "id_empresa", nullable = false)
 	private EmpresaEntity empresa;
+	
+	@Column(name = "dt_registro")
+	private LocalDateTime dtRegistro;
 
-	@Column
-	@Enumerated(EnumType.STRING)
-	private TipoRegistro tipoRegistro;
+	@Column(name = "qtd_notas")
+	private int qtdNotas;
+	
+	@Column(name = "qtd_debitos")
+	private int qtdDebitos;
 }
