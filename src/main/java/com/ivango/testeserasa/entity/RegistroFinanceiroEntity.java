@@ -1,6 +1,6 @@
 package com.ivango.testeserasa.entity;
 
-import java.time.LocalDateTime;
+import java.time.ZonedDateTime;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -27,7 +27,7 @@ public class RegistroFinanceiroEntity {
 	private EmpresaEntity empresa;
 	
 	@Column(name = "dt_registro")
-	private LocalDateTime dtRegistro;
+	private ZonedDateTime dtRegistro;
 
 	@Column(name = "qtd_notas")
 	private int qtdNotas;
