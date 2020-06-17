@@ -39,3 +39,5 @@ insert into empresa(nome, reputacao) values ('Empresa 1', 50);
 insert into empresa(nome, reputacao) values ('Empresa 2', 50);
 insert into empresa(nome, reputacao) values ('Empresa 3', 50);
 ```
+
+Após o Backend estar no ar, siga o setup definido no [Frontend](https://github.com/ivangowippel/testeserasa-frontend).
