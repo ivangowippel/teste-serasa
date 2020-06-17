@@ -1,6 +1,7 @@
 package com.ivango.testeserasa.webservice;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ivango.testeserasa.dto.RegistroFinanceiroDTO;
 import com.ivango.testeserasa.service.RegistroFinanceiroService;
 
+@CrossOrigin
 @RestController
 @RequestMapping("/registrofinanceiro")
 public class RegistroFinanceiroController {
